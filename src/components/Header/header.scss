@@ -1,0 +1,28 @@
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header__contacts-item {
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4d4d4d;
+    margin-left: 15px;
+  }
+}
+.header__contacts-item--big {
+  :first-child {
+    width: 100%;
+  }
+}
