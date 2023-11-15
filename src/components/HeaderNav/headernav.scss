@@ -10,6 +10,7 @@
   height: 60px;
   &:hover {
     .active {
+      z-index: 3;
       position: absolute;
       display: block;
       top: 90%;
