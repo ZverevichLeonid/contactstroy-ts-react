@@ -3,8 +3,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-}
 
+  margin-bottom: 15px;
+}
+.header__block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .header__contacts {
   display: flex;
   flex-direction: column;
