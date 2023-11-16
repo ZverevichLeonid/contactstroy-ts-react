@@ -10,7 +10,6 @@
   height: 60px;
   &:hover {
     .active {
-      z-index: 3;
       position: absolute;
       display: block;
       top: 90%;
@@ -32,6 +31,7 @@
   width: 100%;
   overflow: hidden;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .nav__item {
