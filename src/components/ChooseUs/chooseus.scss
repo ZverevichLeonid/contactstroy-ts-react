@@ -1,0 +1,33 @@
+.choose-us__title {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 35px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.ticker {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+@keyframes tiker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate3D(-100%, 0, 0);
+  }
+}
+
+.ticker__wrapper {
+  display: flex;
+}
+.ticker__line {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  animation: tiker 20s linear infinite;
+}
