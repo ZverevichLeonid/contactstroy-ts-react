@@ -1,37 +1,59 @@
 import React, { useState } from "react";
-import "./maindirections.scss";
 import { Button } from "../Button/Button";
 import { materialsData } from "../../data/materialsData";
 import { specialEquipmentData } from "../../data/specialEquimpentData";
 import { MainDirectionsCard } from "../MainDirectionsCard/MainDirectionsCard";
+import { AnimatePresence, motion } from "framer-motion";
+
+import "./maindirections.scss";
+
 export const MainDirections: React.FC = () => {
   const [list, setList] = useState<
-    typeof specialEquipmentData | typeof materialsData
-  >(specialEquipmentData);
+    typeof materialsData | typeof specialEquipmentData | []
+  >([...specialEquipmentData]);
+  const [active, setActive] = useState(0);
 
   return (
     <section className="main-directions">
       <div className="container">
-        <h2 className="main-directions__title">Основные направления</h2>
+        <div className="main-directions__title">
+          <h2>Основные направления</h2>
+        </div>
         <div className="main-directions__filter">
-          <Button onClick={() => setList(specialEquipmentData)}>
+          <Button
+            backgroundColor="white"
+            active={active === 0 ? true : false}
+            onClick={() => {
+              setList(specialEquipmentData);
+              setActive(0);
+            }}
+          >
             СпецТехника
           </Button>
-          <Button onClick={() => setList(materialsData)}>
+          <Button
+            backgroundColor="white"
+            active={active === 1 ? true : false}
+            onClick={() => {
+              setList(materialsData);
+              setActive(1);
+            }}
+          >
             Нерудные материалы
           </Button>
         </div>
-        <div className="main-directions__list">
-          {list.map((item, index) => {
-            return (
-              <MainDirectionsCard
-                key={index}
-                img={item.previewImg}
-                name={item.name}
-              />
-            );
-          })}
-        </div>
+        <motion.div className="main-directions__list">
+          <AnimatePresence initial={false} mode="wait">
+            {list.map((item) => {
+              return (
+                <MainDirectionsCard
+                  key={item.name}
+                  img={item.previewImg}
+                  name={item.name}
+                />
+              );
+            })}
+          </AnimatePresence>
+        </motion.div>
       </div>
     </section>
   );

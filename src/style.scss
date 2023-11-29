@@ -109,7 +109,9 @@ label {
 legend {
   display: block;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;

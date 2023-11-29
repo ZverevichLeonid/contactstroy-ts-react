@@ -6,6 +6,7 @@ interface ButtonProps {
   borderColor?: "yellow" | "white";
   backgroundColor?: "yellow" | "white";
   textColor?: "gray" | "white";
+  active?: boolean;
   onClick?: () => any;
 }
 export const Button: React.FC<ButtonProps> = ({
@@ -13,8 +14,19 @@ export const Button: React.FC<ButtonProps> = ({
   borderColor = "yellow",
   backgroundColor = "yellow",
   textColor = "gray",
+  active = false,
   onClick,
 }) => {
+  if (active) {
+    return (
+      <button
+        onClick={onClick}
+        className={`button button-backgroundColor-yellow button-border-yellow`}
+      >
+        {children}
+      </button>
+    );
+  }
   return (
     <button
       onClick={onClick}

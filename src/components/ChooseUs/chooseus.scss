@@ -1,11 +1,28 @@
 .choose-us__title {
   text-align: center;
+  position: relative;
   color: #4d4d4d;
   font-size: 35px;
-  font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 50px;
+  h3 {
+    display: inline;
+    margin: 0;
+    padding: 0 30px;
+    z-index: 1;
+    background-color: white;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #e7e7e7;
+    z-index: -1;
+  }
 }
 
 .ticker {

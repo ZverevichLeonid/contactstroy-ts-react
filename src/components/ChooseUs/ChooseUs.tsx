@@ -13,7 +13,11 @@ import { TickerItem } from "../TickerItem/TickerItem";
 export const ChooseUs: React.FC = () => {
   return (
     <section className="choose-us">
-      <h3 className="choose-us__title">Нас выбирают</h3>
+      <div className="container">
+        <div className="choose-us__title">
+          <h3>Нас выбирают</h3>
+        </div>
+      </div>
       <div className="ticker">
         <div className="ticker__wrapper">
           <div className="ticker__line">

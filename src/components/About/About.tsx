@@ -6,7 +6,9 @@ export const About: React.FC = () => {
   return (
     <section className="about">
       <div className="container">
-        <h3 className="about__title">О компании</h3>
+        <div className="about__title">
+          <h3>О компании</h3>
+        </div>
         <div className="about__box">
           <div className="about__text">
             <span>ООО "КОНТАКТ-СТРОЙ"</span>

@@ -44,7 +44,7 @@ export const HeaderNav: React.FC = () => {
               <div className="tab-menu__grid">
                 {tabsData[activeTab].tabItems.map((tab) => {
                   return (
-                    <div className="tab-menu__grid-item">
+                    <div key={tab.name} className="tab-menu__grid-item">
                       <img
                         className="tab-menu__img"
                         src={tab.img}

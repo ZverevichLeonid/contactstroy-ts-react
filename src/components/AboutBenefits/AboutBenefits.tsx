@@ -1,15 +1,32 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { AboutBenefitsCard } from "../AboutBenefitsCard/AboutBenefitsCard";
 import benefit_1 from "../../assets/images/about/benefit_1.png";
 import benefit_2 from "../../assets/images/about/benefit_2.png";
 import benefit_3 from "../../assets/images/about/benefit_3.png";
 import benefit_4 from "../../assets/images/about/benefit_4.png";
 import benefit_5 from "../../assets/images/about/benefit_5.png";
 import "./aboutbenefits.scss";
-import { AboutBenefitsCard } from "../AboutBenefitsCard/AboutBenefitsCard";
 
 export const AboutBenefits: React.FC = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.4,
+      },
+    },
+  };
+
   return (
-    <div className="about-benefits">
+    <motion.div
+      variants={container}
+      initial={"hidden"}
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.8 }}
+      className="about-benefits"
+    >
       <AboutBenefitsCard
         img={benefit_1}
         title="Опыт работы с"
@@ -40,6 +57,6 @@ export const AboutBenefits: React.FC = () => {
         value="24/7"
         desc="круглосуточно"
       />
-    </div>
+    </motion.div>
   );
 };

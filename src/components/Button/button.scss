@@ -5,6 +5,7 @@
   text-transform: uppercase;
   line-height: 1.55;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 .button-border-yellow {
   border: 1px solid #ffc100;
@@ -14,9 +15,15 @@
 }
 .button-backgroundColor-yellow {
   background-color: #ffc100;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 .button-backgroundColor-white {
   background-color: white;
+  &:hover {
+    background-color: #ffc100;
+  }
 }
 .button-textColor-gray {
   color: #4d4d4d;

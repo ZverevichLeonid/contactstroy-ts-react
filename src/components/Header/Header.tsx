@@ -5,8 +5,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsTelegram } from "react-icons/bs";
 import { Button } from "../Button/Button";
-import "./header.scss";
 import { HeaderNav } from "../HeaderNav/HeaderNav";
+import "./header.scss";
 export const Header: React.FC = () => {
   return (
     <header className="header">
@@ -19,7 +19,9 @@ export const Header: React.FC = () => {
             <div className="header__contacts">
               <div className="header__contacts-item">
                 <AiOutlineMail size={35} />
-                <span>info@контакт-строй.рф</span>
+                <a href="mailto:info@контакт-строй.рф" target="_blank">
+                  info@контакт-строй.рф
+                </a>
               </div>
               <div className="header__contacts-item">
                 <FiMapPin size={35} />
@@ -30,22 +32,28 @@ export const Header: React.FC = () => {
 
           <div className="header__contacts">
             <div className="header__contacts-item">
-              <span style={{ fontWeight: 700, marginRight: 15 }}>
+              <a
+                href="tel:+79290720389"
+                target="_blank"
+                style={{ fontWeight: 700, marginRight: 15 }}
+              >
                 +7 (929) 072-03-89
-              </span>
-              <a href="#">
+              </a>
+              <a target="_blank" href="https://www.whatsapp.com/?lang=ru_RU">
                 <BsWhatsapp
                   size={35}
                   style={{ marginRight: 15 }}
                   color={"black"}
                 />
               </a>
-              <a href="#">
+              <a href="https://web.telegram.org/k/" target="_blank">
                 <BsTelegram size={35} color={"black"} />
               </a>
             </div>
             <div className="header__contacts-item--big">
-              <Button>Обратный звонок</Button>
+              <a href="#form-section">
+                <Button>Обратный звонок</Button>
+              </a>
             </div>
           </div>
         </div>
