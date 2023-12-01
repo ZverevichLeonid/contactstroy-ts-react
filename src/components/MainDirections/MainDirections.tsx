@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "../Button/Button";
 import { materialsData } from "../../data/materialsData";
 import { specialEquipmentData } from "../../data/specialEquimpentData";
-import { MainDirectionsCard } from "../MainDirectionsCard/MainDirectionsCard";
+import { PreviewCard } from "../PreviewCard/PreviewCard";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./maindirections.scss";
@@ -45,10 +45,13 @@ export const MainDirections: React.FC = () => {
           <AnimatePresence initial={false} mode="wait">
             {list.map((item) => {
               return (
-                <MainDirectionsCard
+                <PreviewCard
                   key={item.name}
                   img={item.previewImg}
                   name={item.name}
+                  slug={item.slug}
+                  id={item.id}
+                  type={item.type}
                 />
               );
             })}

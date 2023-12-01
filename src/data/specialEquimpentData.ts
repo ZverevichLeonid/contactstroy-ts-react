@@ -26,13 +26,39 @@ import excavatorWheeled from "../assets/images/special-equipment/excavator/wheel
 import trawlPreview from "../assets/images/special-equipment/trawl/1.jpg";
 import trawl from "../assets/images/special-equipment/trawl/1.jpg";
 
-export const specialEquipmentData = [
+export interface ISpecialEquipmentData {
+  title: string;
+  name: string;
+  previewImg: string;
+  id: number;
+  type: "techniks";
+  slug: string;
+  types: IType[];
+}
+interface IType {
+  typeName: string;
+  typeIMG: string;
+  characteristics: ICharacteristic[];
+}
+interface ICharacteristic {
+  characteristicTitle: string;
+  characteristicInfo: ICharacteristicInfo[];
+}
+interface ICharacteristicInfo {
+  characteristic: string;
+  value: string;
+}
+export const specialEquipmentData: ISpecialEquipmentData[] = [
   {
     title: "Аренда автокрана",
     name: "АВТОКРАН",
     previewImg: truckСranePreview,
-    types: {
-      light: {
+    id: 11,
+    type: "techniks",
+    slug: "/technika/arenda_avtokran",
+    types: [
+      {
+        typeName: "лёгкие",
         typeIMG: truckСraneLight,
         characteristics: [
           {
@@ -93,7 +119,8 @@ export const specialEquipmentData = [
           },
         ],
       },
-      medium: {
+      {
+        typeName: "средние",
         typeIMG: truckСraneMedium,
         characteristics: [
           {
@@ -140,7 +167,8 @@ export const specialEquipmentData = [
           },
         ],
       },
-      heavy: {
+      {
+        typeName: "тяжёлые",
         typeIMG: truckСraneHeavy,
         characteristics: [
           {
@@ -201,14 +229,18 @@ export const specialEquipmentData = [
           },
         ],
       },
-    },
+    ],
   },
   {
     title: "Аренда автовышки",
     name: "АВТОВЫШКА",
     previewImg: aerialPlatformPreview,
-    types: {
-      telescopic: {
+    id: 12,
+    type: "techniks",
+    slug: "/technika/arenda_avtovishka",
+    types: [
+      {
+        typeName: "телескопические",
         typeIMG: aerialPlatformTelescopic,
         characteristics: [
           {
@@ -304,7 +336,8 @@ export const specialEquipmentData = [
           },
         ],
       },
-      cranked: {
+      {
+        typeName: "коленчатые",
         typeIMG: aerialPlatformCranked,
         characteristics: [
           {
@@ -335,14 +368,18 @@ export const specialEquipmentData = [
           },
         ],
       },
-    },
+    ],
   },
   {
     title: "Аренда бульдозера",
     name: "БУЛЬДОЗЕР",
     previewImg: bulldozerPreview,
-    types: {
-      bulldozer: {
+    id: 13,
+    type: "techniks",
+    slug: "/technika/arenda_buldozer",
+    types: [
+      {
+        typeName: "бульдозер",
         typeIMG: bulldozer,
         characteristics: [
           {
@@ -386,14 +423,18 @@ export const specialEquipmentData = [
           },
         ],
       },
-    },
+    ],
   },
   {
     title: "Аренда самосвала",
     name: "САМОСВАЛ",
     previewImg: dumptruckPreview,
-    types: {
-      dumptruck: {
+    id: 14,
+    type: "techniks",
+    slug: "/technika/arenda_samosval",
+    types: [
+      {
+        typeName: "самосвал",
         typeIMG: dumptruck,
         characteristics: [
           {
@@ -437,14 +478,18 @@ export const specialEquipmentData = [
           },
         ],
       },
-    },
+    ],
   },
   {
     title: "Аренда манипулятора",
     name: "МАНИПУЛЯТОР",
     previewImg: manipulatorPreview,
-    types: {
-      manipulator: {
+    id: 15,
+    type: "techniks",
+    slug: "/technika/arenda_avtovishka",
+    types: [
+      {
+        typeName: "манипулятор",
         typeIMG: manipulator,
         characteristics: [
           {
@@ -505,14 +550,18 @@ export const specialEquipmentData = [
           },
         ],
       },
-    },
+    ],
   },
   {
     title: "Аренда погрузчика",
     name: "ПОГРУЗЧИК",
     previewImg: frontloaderPreview,
-    types: {
-      frontloader: {
+    id: 16,
+    type: "techniks",
+    slug: "/technika/arenda_pogruzchik",
+    types: [
+      {
+        typeName: "фронтальный погрузчик",
         typeIMG: frontloader,
         characteristics: [
           {
@@ -543,14 +592,18 @@ export const specialEquipmentData = [
           },
         ],
       },
-    },
+    ],
   },
   {
     title: "Аренда экскаватора",
     name: "ЭКСКАВАТОР",
     previewImg: excavatorPreview,
-    types: {
-      crawler: {
+    id: 17,
+    type: "techniks",
+    slug: "/technika/arenda_ekskavator",
+    types: [
+      {
+        typeName: "гусеничные",
         typeIMG: excavatorCrawler,
         characteristics: [
           {
@@ -594,7 +647,8 @@ export const specialEquipmentData = [
           },
         ],
       },
-      wheeled: {
+      {
+        typeName: "колёсные",
         typeIMG: excavatorWheeled,
         characteristics: [
           {
@@ -625,14 +679,18 @@ export const specialEquipmentData = [
           },
         ],
       },
-    },
+    ],
   },
   {
     title: "Аренда трала",
     name: "ТРАЛ",
     previewImg: trawlPreview,
-    types: {
-      trawl: {
+    id: 18,
+    type: "techniks",
+    slug: "/technika/arenda_trala",
+    types: [
+      {
+        typeName: "трал",
         typeIMG: trawl,
         characteristics: [
           {
@@ -650,7 +708,7 @@ export const specialEquipmentData = [
           },
         ],
       },
-    },
+    ],
   },
 ];
 

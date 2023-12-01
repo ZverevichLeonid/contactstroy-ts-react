@@ -22,101 +22,165 @@ import snowRemoval from "../assets/images/tabImages/services/snow-removal.png";
 
 interface ITabData {
   tabTitle: string;
+  tabSlug: string;
   tabItems: {
+    id: number;
+    type: "material" | "techniks" | "uslugi";
     name: string;
     img: string;
+    slug: string;
   }[];
 }
 
 export const tabsData: ITabData[] = [
   {
     tabTitle: "нерудные материалы",
+    tabSlug: "/nerudnie_materiali",
     tabItems: [
       {
+        id: 4,
+        type: "material",
         name: "Щебень известняковый",
         img: crushedLimestone,
+        slug: "/nerudnie_materiali/sheben_izvestnyakoviy",
       },
       {
+        id: 1,
+        type: "material",
         name: "Щебень гранитный",
         img: crushedGranitestone,
+        slug: "/nerudnie_materiali/sheben_granitniy",
       },
       {
+        id: 2,
+        type: "material",
         name: "Щебень шлаковый",
         img: crushedSlagstone,
+        slug: "/nerudnie_materiali/sheben_shlakoviy",
       },
       {
+        id: 3,
+        type: "material",
         name: "Щебень доломитовый",
         img: dolomiteCrushedStone,
+        slug: "/nerudnie_materiali/sheben_dolomitoviy",
       },
       {
+        id: 0,
+        type: "material",
         name: "Песок",
         img: sand,
+        slug: "/nerudnie_materiali/pesok",
       },
       {
+        id: 5,
+        type: "material",
         name: "Песчано-гравийная смесь",
         img: sandAndGravel,
+        slug: "/nerudnie_materiali/pgs",
       },
       {
+        id: 6,
+        type: "material",
         name: "Щебеночно-песчаная смесь",
         img: crushedStoneSAndMixture,
+        slug: "/nerudnie_materiali/shps",
       },
     ],
   },
   {
     tabTitle: "Аренда техники",
+    tabSlug: "/technika",
     tabItems: [
       {
+        id: 11,
+        type: "techniks",
         name: "Автокран",
         img: truckСrane,
+        slug: "/technika/arenda_avtokran",
       },
       {
+        id: 12,
+        type: "techniks",
         name: "Автовышка",
         img: aerialPlatform,
+        slug: "/technika/arenda_avtovishka",
       },
       {
+        id: 15,
+        type: "techniks",
         name: "Манипулятор",
         img: manipulator,
+        slug: "/technika/arenda_avtovishka",
       },
       {
+        id: 17,
+        type: "techniks",
         name: "Эскаватор",
         img: excavator,
+        slug: "/technika/arenda_ekskavator",
       },
       {
+        id: 13,
+        type: "techniks",
         name: "Бульдозер",
         img: bulldozer,
+        slug: "/technika/arenda_buldozer",
       },
       {
+        id: 16,
+        type: "techniks",
         name: "Фронтальный погрузчик",
         img: frontloader,
+        slug: "/technika/arenda_pogruzchik",
       },
       {
+        id: 18,
+        type: "techniks",
         name: "Трал",
         img: trawl,
+        slug: "/technika/arenda_trala",
       },
       {
+        id: 14,
+        type: "techniks",
         name: "Самосвал",
         img: dumptruck,
+        slug: "/technika/arenda_samosval",
       },
     ],
   },
   {
     tabTitle: "Услуги",
+    tabSlug: "/uslugi",
     tabItems: [
       {
+        id: 21,
+        type: "uslugi",
         name: "Вывоз мусора",
         img: garbageRemoval,
+        slug: "/uslugi/vyivoz_musora",
       },
       {
+        id: 22,
+        type: "uslugi",
         name: "Вывоз грунта",
         img: soilRemoval,
+        slug: "/uslugi/vyivoz_grunta",
       },
       {
+        id: 23,
+        type: "uslugi",
         name: "Перевозка сыпучих материалов",
         img: ransportationOfBulkMaterials,
+        slug: "/uslugi/sipuchie_materiali",
       },
       {
+        id: 24,
+        type: "uslugi",
         name: "Уборка снега",
         img: snowRemoval,
+        slug: "/uslugi/uborka_snega",
       },
     ],
   },

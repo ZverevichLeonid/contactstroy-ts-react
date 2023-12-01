@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import "./headernav.scss";
 import { tabsData } from "../../data/tabsData";
+import { Link } from "react-router-dom";
+import "./headernav.scss";
+
 export const HeaderNav: React.FC = () => {
   const [isTabActive, setIsTabActive] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
@@ -25,33 +27,41 @@ export const HeaderNav: React.FC = () => {
                 onMouseEnter={() => handleTabShow(tabIndex)}
                 className="nav__item"
               >
-                <a className="nav__item-link">{data.tabTitle}</a>
+                <Link to={data.tabSlug} className="nav__item-link">
+                  {data.tabTitle}
+                </Link>
               </li>
             );
           })}
           <li className="nav__item">
-            <a className="nav__item-link" href="">
+            <Link to={"/about"} className="nav__item-link">
               О Компании
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a className="nav__item-link" href="">
+            <Link to={"/contacts"} className="nav__item-link">
               Контакты
-            </a>
+            </Link>
           </li>
           <div className={isTabActive ? "tab-menu active" : "tab-menu"}>
             <div className="container">
               <div className="tab-menu__grid">
                 {tabsData[activeTab].tabItems.map((tab) => {
                   return (
-                    <div key={tab.name} className="tab-menu__grid-item">
+                    <Link
+                      onClick={handleTabClose}
+                      to={tab.slug}
+                      state={{ id: tab.id, type: tab.type }}
+                      key={tab.name}
+                      className="tab-menu__grid-item"
+                    >
                       <img
                         className="tab-menu__img"
                         src={tab.img}
                         alt={tab.name}
                       />
                       {tab.name}
-                    </div>
+                    </Link>
                   );
                 })}
               </div>

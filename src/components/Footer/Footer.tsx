@@ -1,11 +1,11 @@
 import React from "react";
-import "./footer.scss";
 import logo from "../../assets/images/logo/footer-logo.jpg";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "./footer.scss";
 export const Footer: React.FC = () => {
   return (
     <footer className="footer">

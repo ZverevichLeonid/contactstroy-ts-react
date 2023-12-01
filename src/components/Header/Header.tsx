@@ -7,15 +7,20 @@ import { BsTelegram } from "react-icons/bs";
 import { Button } from "../Button/Button";
 import { HeaderNav } from "../HeaderNav/HeaderNav";
 import "./header.scss";
+import { Link } from "react-router-dom";
 export const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="container">
         <div className="header__row">
           <div className="header__block">
-            <a href="#" className="header__img">
+            <Link
+              onClick={() => window.scrollTo(0, 0)}
+              to={"/"}
+              className="header__img"
+            >
               <img src={logo} alt="" />
-            </a>
+            </Link>
             <div className="header__contacts">
               <div className="header__contacts-item">
                 <AiOutlineMail size={35} />
