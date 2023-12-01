@@ -10,18 +10,18 @@ import { IUslugiData } from "../../../data/uslugiData";
 import "./allitemslist.scss";
 export const AllItemsList: React.FC = () => {
   let location = useLocation();
-  const [dataCard, setDataCard] = useState<
+  const [cardData, setCardData] = useState<
     ISpecialEquipmentData[] | IMaterialData[] | IUslugiData[]
   >();
   useEffect(() => {
     if (location.pathname === "/technika") {
-      return setDataCard(specialEquipmentData);
+      return setCardData(specialEquipmentData);
     }
     if (location.pathname === "/nerudnie_materiali") {
-      return setDataCard(materialsData);
+      return setCardData(materialsData);
     }
     if (location.pathname === "/uslugi") {
-      return setDataCard(uslugiData);
+      return setCardData(uslugiData);
     }
   }, [location]);
   const SetTitle: React.FC = () => {
@@ -49,16 +49,16 @@ export const AllItemsList: React.FC = () => {
           </div>
         ) : null}
         <div className="items__list">
-          {dataCard &&
-            dataCard.map((technik) => {
+          {cardData &&
+            cardData.map((item) => {
               return (
                 <PreviewCard
-                  key={technik.name}
-                  img={technik.previewImg}
-                  name={technik.name}
-                  id={technik.id}
-                  slug={technik.slug}
-                  type={technik.type}
+                  key={item.name}
+                  img={item.previewImg}
+                  name={item.name}
+                  id={item.id}
+                  slug={item.slug}
+                  type={item.type}
                 />
               );
             })}
