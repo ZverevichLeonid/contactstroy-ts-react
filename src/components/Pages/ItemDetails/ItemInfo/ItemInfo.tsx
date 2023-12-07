@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "../../../Button/Button";
 import { IAllData } from "../../../../data/allData";
 import "./iteminfo.scss";
 
 interface ItemInfoProps {
   item: IAllData;
+  typeIndex: number;
+  setTypeIndex: (arg: number) => void;
 }
 
-export const ItemInfo: React.FC<ItemInfoProps> = ({ item }) => {
-  const [typeIndex, setTypeIndex] = useState(0);
+export const ItemInfo: React.FC<ItemInfoProps> = ({
+  item,
+  typeIndex,
+  setTypeIndex,
+}) => {
   if (item.type === "material") {
     return (
       <section className="item">
@@ -42,6 +47,9 @@ export const ItemInfo: React.FC<ItemInfoProps> = ({ item }) => {
                 </div>
               </div>
             </div>
+            <a className="item__link" href="#form-section">
+              Заказать
+            </a>
           </div>
         </div>
       </section>
@@ -49,7 +57,7 @@ export const ItemInfo: React.FC<ItemInfoProps> = ({ item }) => {
   }
   if (item.type === "techniks") {
     return (
-      <section className="item">
+      <section key={item.id} className="item">
         <div className="container">
           <div className="item__box">
             <div className="item__title">
@@ -72,43 +80,54 @@ export const ItemInfo: React.FC<ItemInfoProps> = ({ item }) => {
               </div>
             ) : null}
             <div className="item__img">
-              <img
-                src={item.types && item.types[typeIndex].typeIMG}
-                alt={item.name}
-              />
+              {item.types && (
+                <img
+                  src={
+                    item.types.length > 1
+                      ? item.types[typeIndex].typeIMG
+                      : item.types[0].typeIMG
+                  }
+                  alt={item.name}
+                />
+              )}
             </div>
             <div className="item__desc">
               <div className="item-characterisctics">
                 {item.types &&
-                  item.types[typeIndex].characteristics.map(
-                    (characteristic) => {
-                      return (
-                        <div
-                          key={characteristic.characteristicTitle}
-                          className="item-characterisctic"
-                        >
-                          <div className="item-characterisctic__title">
-                            {characteristic.characteristicTitle}
-                          </div>
-                          <div className="item-characterisctic__info">
-                            {characteristic.characteristicInfo.map((info) => {
-                              return (
-                                <div
-                                  key={info.characteristic}
-                                  className="item-characterisctic__row"
-                                >
-                                  <span>{info.characteristic}</span>
-                                  <span></span>
-                                  <span>{info.value}</span>
-                                </div>
-                              );
-                            })}
-                          </div>
+                  item.types[
+                    item.types.length > 1 ? typeIndex : 0
+                  ].characteristics.map((characteristic) => {
+                    return (
+                      <div
+                        key={characteristic?.characteristicTitle}
+                        className="item-characterisctic"
+                      >
+                        <div className="item-characterisctic__title">
+                          {characteristic?.characteristicTitle}
                         </div>
-                      );
-                    }
-                  )}
+                        <div className="item-characterisctic__info">
+                          {characteristic?.characteristicInfo.map((info) => {
+                            return (
+                              <div
+                                key={info?.characteristic}
+                                className="item-characterisctic__row"
+                              >
+                                <span>{info?.characteristic}</span>
+                                <span></span>
+                                <span>{info?.value}</span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  })}
               </div>
+            </div>
+            <div>
+              <a className="item__link" href="#form-section">
+                Заказать
+              </a>
             </div>
           </div>
         </div>
@@ -148,6 +167,9 @@ export const ItemInfo: React.FC<ItemInfoProps> = ({ item }) => {
                 </div>
               </div>
             </div>
+            <a className="item__link" href="#form-section">
+              Заказать
+            </a>
           </div>
         </div>
       </section>

@@ -30,7 +30,7 @@ export interface ISpecialEquipmentData {
   title: string;
   name: string;
   previewImg: string;
-  id: number;
+  id: string;
   type: "techniks";
   slug: string;
   types: IType[];
@@ -53,7 +53,7 @@ export const specialEquipmentData: ISpecialEquipmentData[] = [
     title: "Аренда автокрана",
     name: "АВТОКРАН",
     previewImg: truckСranePreview,
-    id: 11,
+    id: "arenda_avtokran",
     type: "techniks",
     slug: "/technika/arenda_avtokran",
     types: [
@@ -235,7 +235,7 @@ export const specialEquipmentData: ISpecialEquipmentData[] = [
     title: "Аренда автовышки",
     name: "АВТОВЫШКА",
     previewImg: aerialPlatformPreview,
-    id: 12,
+    id: "arenda_avtovishka",
     type: "techniks",
     slug: "/technika/arenda_avtovishka",
     types: [
@@ -374,7 +374,7 @@ export const specialEquipmentData: ISpecialEquipmentData[] = [
     title: "Аренда бульдозера",
     name: "БУЛЬДОЗЕР",
     previewImg: bulldozerPreview,
-    id: 13,
+    id: "arenda_buldozer",
     type: "techniks",
     slug: "/technika/arenda_buldozer",
     types: [
@@ -429,7 +429,7 @@ export const specialEquipmentData: ISpecialEquipmentData[] = [
     title: "Аренда самосвала",
     name: "САМОСВАЛ",
     previewImg: dumptruckPreview,
-    id: 14,
+    id: "arenda_samosval",
     type: "techniks",
     slug: "/technika/arenda_samosval",
     types: [
@@ -484,7 +484,7 @@ export const specialEquipmentData: ISpecialEquipmentData[] = [
     title: "Аренда манипулятора",
     name: "МАНИПУЛЯТОР",
     previewImg: manipulatorPreview,
-    id: 15,
+    id: "arenda_avtovishka",
     type: "techniks",
     slug: "/technika/arenda_avtovishka",
     types: [
@@ -556,7 +556,7 @@ export const specialEquipmentData: ISpecialEquipmentData[] = [
     title: "Аренда погрузчика",
     name: "ПОГРУЗЧИК",
     previewImg: frontloaderPreview,
-    id: 16,
+    id: "arenda_pogruzchik",
     type: "techniks",
     slug: "/technika/arenda_pogruzchik",
     types: [
@@ -598,7 +598,7 @@ export const specialEquipmentData: ISpecialEquipmentData[] = [
     title: "Аренда экскаватора",
     name: "ЭКСКАВАТОР",
     previewImg: excavatorPreview,
-    id: 17,
+    id: "arenda_ekskavator",
     type: "techniks",
     slug: "/technika/arenda_ekskavator",
     types: [
@@ -685,7 +685,7 @@ export const specialEquipmentData: ISpecialEquipmentData[] = [
     title: "Аренда трала",
     name: "ТРАЛ",
     previewImg: trawlPreview,
-    id: 18,
+    id: "arenda_trala",
     type: "techniks",
     slug: "/technika/arenda_trala",
     types: [

@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import { Header } from "../../Header/Header";
 import { Contacts } from "../../Contacts/Contacts";
 import { Footer } from "../../Footer/Footer";
-import { AllItemsList } from "./AllItemsList";
-import { Form } from "../../Form/Form";
-export const AllItems: React.FC = () => {
+
+export const ContactsPage: React.FC = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -15,8 +14,6 @@ export const AllItems: React.FC = () => {
   return (
     <>
       <Header />
-      <AllItemsList />
-      <Form />
       <Contacts />
       <Footer />
     </>

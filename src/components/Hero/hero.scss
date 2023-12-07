@@ -36,6 +36,22 @@
 .hero__btns {
   display: flex;
   gap: 15px;
+  a {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #ffc100;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #ffc100;
+    }
+  }
 }
 
 .hero__img {

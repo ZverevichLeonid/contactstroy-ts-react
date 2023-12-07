@@ -3,14 +3,14 @@ import "./previewcard.scss";
 import { Button } from "../Button/Button";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-interface MainDirectionsCardProps {
+interface PreviewCardProps {
   name: string;
   img: string;
   slug: string;
-  id: number;
+  id: string;
   type: string;
 }
-export const PreviewCard: React.FC<MainDirectionsCardProps> = ({
+export const PreviewCard: React.FC<PreviewCardProps> = ({
   name,
   img,
   slug,

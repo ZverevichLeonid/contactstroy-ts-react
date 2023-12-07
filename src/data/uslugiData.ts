@@ -4,7 +4,7 @@ import bulkIMG from "../assets/images/uslugi/bulk_materials.png";
 import snowIMG from "../assets/images/uslugi/sneg_1.jpg";
 
 export interface IUslugiData {
-  id: number;
+  id: string;
   type: "uslugi";
   title: string;
   name: string;
@@ -18,7 +18,7 @@ interface ICharacteristics {
 }
 export const uslugiData: IUslugiData[] = [
   {
-    id: 21,
+    id: "vyivoz_musora",
     type: "uslugi",
     title: "Вывоз строительного мусора",
     name: "Вывоз строительного мусора",
@@ -32,7 +32,7 @@ export const uslugiData: IUslugiData[] = [
     ],
   },
   {
-    id: 22,
+    id: "vyivoz_grunta",
     type: "uslugi",
     title: "Вывоз грунта",
     name: "Вывоз грунта",
@@ -46,7 +46,7 @@ export const uslugiData: IUslugiData[] = [
     ],
   },
   {
-    id: 23,
+    id: "sipuchie_materiali",
     type: "uslugi",
     title: "Перевозка сыпучих материалов",
     name: "Перевозка сыпучих материалов",
@@ -60,7 +60,7 @@ export const uslugiData: IUslugiData[] = [
     ],
   },
   {
-    id: 24,
+    id: "uborka_snega",
     type: "uslugi",
     title: "Уборка снега",
     name: "Уборка снега",

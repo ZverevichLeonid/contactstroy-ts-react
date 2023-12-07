@@ -50,97 +50,113 @@ export const Footer: React.FC = () => {
           <div className="footer__block">
             <ul className="footer__list">
               <li className="footer__item_title">
-                <a href="#!">НЕРУДНЫЕ МАТЕРИАЛЫ</a>
+                <Link to={"/nerudnie_materiali"}>НЕРУДНЫЕ МАТЕРИАЛЫ</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Щебень известняковый</a>
+                <Link to={"/nerudnie_materiali/sheben_izvestnyakoviy"}>
+                  Щебень известняковый
+                </Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Щебень гранитный</a>
+                <Link to={"/nerudnie_materiali/sheben_granitniy"}>
+                  Щебень гранитный
+                </Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Щебень шлаковый</a>
+                <Link to={"/nerudnie_materiali/sheben_shlakoviy"}>
+                  Щебень шлаковый
+                </Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Щебень доломитовый</a>
+                <Link to={"/nerudnie_materiali/sheben_dolomitoviy"}>
+                  Щебень доломитовый
+                </Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Песок</a>
+                <Link to={"/nerudnie_materiali/pesok"}>Песок</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Песчано-гравийная смесь</a>
+                <Link to={"/nerudnie_materiali/pgs"}>
+                  Песчано-гравийная смесь
+                </Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Щебеночно-песчаная смесь</a>
+                <Link to={"/nerudnie_materiali/shps"}>
+                  Щебеночно-песчаная смесь
+                </Link>
               </li>
             </ul>
           </div>
           <div className="footer__block">
             <ul className="footer__list">
               <li className="footer__item_title">
-                <a href="#!">СТРОИТЕЛЬНАЯ ТЕХНИКА</a>
+                <Link to={"/technika"}>СТРОИТЕЛЬНАЯ ТЕХНИКА</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Автокран</a>
+                <Link to={"/technika/arenda_avtokran"}>Автокран</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Автовышка</a>
+                <Link to={"/technika/arenda_avtovishka"}>Автовышка</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Манипулятор</a>
+                <Link to={"/technika/arenda_manipulator"}>Манипулятор</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Экскаватор</a>
+                <Link to={"/technika/arenda_ekskavator"}>Экскаватор</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Бульдозер</a>
+                <Link to={"/technika/arenda_buldozer"}>Бульдозер</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Фронтальный погрузчик</a>
+                <Link to={"/technika/arenda_pogruzchik"}>
+                  Фронтальный погрузчик
+                </Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Трал</a>
+                <Link to={"/technika/arenda_trala"}>Трал</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Самосвал</a>
+                <Link to={"/technika/arenda_samosval"}>Самосвал</Link>
               </li>
             </ul>
           </div>
           <div className="footer__block">
             <ul className="footer__list">
               <li className="footer__item_title">
-                <a href="#!">УСЛУГИ</a>
+                <Link to={"/uslugi"}>УСЛУГИ</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Вывоз мусора</a>
+                <Link to={"/uslugi/vyivoz_musora"}>Вывоз мусора</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Вывоз грунта</a>
+                <Link to={"/uslugi/vyivoz_grunta"}>Вывоз грунта</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Перевозка сыпучих материалов</a>
+                <Link to={"/uslugi/sipuchie_materiali"}>
+                  Перевозка сыпучих материалов
+                </Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Уборка снега</a>
+                <Link to={"/uslugi/uborka_snega"}>Уборка снега</Link>
               </li>
             </ul>
           </div>
           <div className="footer__block">
             <ul className="footer__list">
               <li className="footer__item_title">
-                <a href="#!">КОНТАКТ-СТРОЙ</a>
+                <Link to={"/"}>КОНТАКТ-СТРОЙ</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">О компании</a>
+                <Link to={"/about"}>О компании</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Обратна связь</a>
+                <Link to={"/"}>Обратная связь</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Контакты</a>
+                <Link to={"/contacts"}>Контакты</Link>
               </li>
               <li className="footer__item">
-                <a href="#!">Новости</a>
+                <Link to={"/"}>Новости</Link>
               </li>
             </ul>
           </div>

@@ -1,0 +1,52 @@
+.item-description {
+  margin-bottom: 100px;
+  position: relative;
+}
+.item-description__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url("../../../../assets/images/paralax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+.item-description__box {
+  max-width: 700px;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  min-height: 450px;
+}
+.item-description__title {
+  color: #4d4d4d;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 30px;
+  span {
+    color: rgb(255, 193, 0);
+  }
+}
+.item-description__text {
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.item-description__flex {
+  display: flex;
+  gap: 25px;
+}
+.item-description__form {
+  width: 100%;
+  min-width: 320px;
+  padding-top: 50px;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo/logo.png";
 import { FiMapPin } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
@@ -6,9 +6,20 @@ import { BsWhatsapp } from "react-icons/bs";
 import { BsTelegram } from "react-icons/bs";
 import { Button } from "../Button/Button";
 import { HeaderNav } from "../HeaderNav/HeaderNav";
-import "./header.scss";
 import { Link } from "react-router-dom";
+import { Modal } from "../Modal/Modal";
+import { FormMini } from "../FormMini/FormMini";
+import { GiConfirmed } from "react-icons/gi";
+import "./header.scss";
 export const Header: React.FC = () => {
+  const [active, setActive] = useState(false);
+  const [activeConfirmModal, setActiveConfirmModal] = useState(false);
+  useEffect(() => {
+    if (activeConfirmModal) {
+      setActive(false);
+      setActiveConfirmModal(true);
+    }
+  }, [activeConfirmModal]);
   return (
     <header className="header">
       <div className="container">
@@ -23,13 +34,13 @@ export const Header: React.FC = () => {
             </Link>
             <div className="header__contacts">
               <div className="header__contacts-item">
-                <AiOutlineMail size={35} />
+                <AiOutlineMail color={"#4d4d4d"} size={35} />
                 <a href="mailto:info@контакт-строй.рф" target="_blank">
                   info@контакт-строй.рф
                 </a>
               </div>
               <div className="header__contacts-item">
-                <FiMapPin size={35} />
+                <FiMapPin color={"#4d4d4d"} size={35} />
                 <span>г.Тула, пр-т Ленина, д. 157, оф 219</span>
               </div>
             </div>
@@ -56,7 +67,7 @@ export const Header: React.FC = () => {
               </a>
             </div>
             <div className="header__contacts-item--big">
-              <a href="#form-section">
+              <a onClick={() => setActive(true)}>
                 <Button>Обратный звонок</Button>
               </a>
             </div>
@@ -64,6 +75,13 @@ export const Header: React.FC = () => {
         </div>
       </div>
       <HeaderNav />
+      <Modal active={active} setActive={setActive}>
+        <FormMini setActiveConfirmModal={setActiveConfirmModal} />
+      </Modal>
+      <Modal active={activeConfirmModal} setActive={setActiveConfirmModal}>
+        <GiConfirmed color={"green"} size={40} />
+        <span>Спасибо! Данные успешно отправлены.</span>
+      </Modal>
     </header>
   );
 };

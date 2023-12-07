@@ -2,7 +2,7 @@ import React from "react";
 import "./button.scss";
 
 interface ButtonProps {
-  children: string;
+  children: any;
   borderColor?: "yellow" | "white";
   backgroundColor?: "yellow" | "white";
   textColor?: "gray" | "white";

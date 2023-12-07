@@ -7,7 +7,7 @@ import sandAndGravel from "../assets/images/materials/sand-and-gravel.png";
 import crushedStoneSAndMixture from "../assets/images/materials/crushed-stone-sand-mixture.png";
 
 export interface IMaterialData {
-  id: number;
+  id: string;
   type: "material";
   title: string;
   name: string;
@@ -21,7 +21,7 @@ interface ICharacteristics {
 }
 export const materialsData: IMaterialData[] = [
   {
-    id: 0,
+    id: "pesok",
     type: "material",
     title: "Доставка песка",
     name: "ПЕСОК",
@@ -39,7 +39,7 @@ export const materialsData: IMaterialData[] = [
     ],
   },
   {
-    id: 1,
+    id: "sheben_granitniy",
     type: "material",
     title: "Доставка гранитного щебня",
     name: "ЩЕБЕНЬ ГРАНИТНЫЙ",
@@ -73,7 +73,7 @@ export const materialsData: IMaterialData[] = [
     ],
   },
   {
-    id: 2,
+    id: "sheben_shlakoviy",
     type: "material",
     title: "Доставка шлакового щебня",
     name: "ЩЕБЕНЬ ШЛАКОВЫЙ",
@@ -95,7 +95,7 @@ export const materialsData: IMaterialData[] = [
     ],
   },
   {
-    id: 3,
+    id: "sheben_dolomitoviy",
     type: "material",
     title: "Доставка доломитового щебня",
     name: "ЩЕБЕНЬ ДОЛОМИТОВЫЙ",
@@ -117,7 +117,7 @@ export const materialsData: IMaterialData[] = [
     ],
   },
   {
-    id: 4,
+    id: "sheben_izvestnyakoviy",
     type: "material",
     title: "Доставка известнякового щебня",
     name: "ЩЕБЕНЬ ИЗВЕСТНЯКОВЫЙ",
@@ -143,7 +143,7 @@ export const materialsData: IMaterialData[] = [
     ],
   },
   {
-    id: 5,
+    id: "pgs",
     type: "material",
     title: "Доставка песчано-гравийной смеси",
     name: "ПЕСЧАНО-ГРАВИЙНАЯ СМЕСЬ",
@@ -157,7 +157,7 @@ export const materialsData: IMaterialData[] = [
     ],
   },
   {
-    id: 6,
+    id: "shps",
     type: "material",
     title: "Доставка щебеночно-песчаной смеси",
     name: "ЩЕБЕНОЧНО-ПЕСЧАНАЯ СМЕСЬ",

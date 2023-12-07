@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import { Home } from "./components/Pages/Home/Home";
 import { ItemDetails } from "./components/Pages/ItemDetails/ItemDetails";
 import { AllItems } from "./components/Pages/AllItems/AllItems";
+import { AboutPage } from "./components/Pages/AboutPage/AboutPage";
+import { ContactsPage } from "./components/Pages/ContactsPage/ContactsPage";
 function App() {
   return (
     <Routes>
@@ -13,8 +15,8 @@ function App() {
       <Route path="/nerudnie_materiali/:itemName" element={<ItemDetails />} />
       <Route path="/uslugi" element={<AllItems />} />
       <Route path="/uslugi/:itemName" element={<ItemDetails />} />
-      <Route path="/about" element={<Home />} />
-      <Route path="/contacts" element={<Home />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/contacts" element={<ContactsPage />} />
     </Routes>
   );
 }

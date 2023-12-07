@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../Button/Button";
 import heroIMG from "../../assets/images/hero/slider_1.jpg";
+import { Link } from "react-router-dom";
 import "./hero.scss";
 
 export const Hero: React.FC = () => {
@@ -14,12 +14,14 @@ export const Hero: React.FC = () => {
               <br /> Строительной техники
             </h1>
             <div className="hero__desc">
-              <span>Доставка строительных материалов </span>
-              <br /> по ЦФО и южному округу
+              <p>
+                <span>Доставка строительных материалов </span>
+                <br /> по ЦФО и южному округу
+              </p>
             </div>
             <div className="hero__btns">
-              <Button>Подобрать технику</Button>
-              <Button backgroundColor="white">Рассчитать стоимость</Button>
+              <Link to={"/technika"}>Подобрать технику</Link>
+              <Link to={"/nerudnie_materiali"}>Рассчитать стоимость</Link>
             </div>
           </div>
           <div className="hero__img">

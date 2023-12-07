@@ -24,7 +24,7 @@ interface ITabData {
   tabTitle: string;
   tabSlug: string;
   tabItems: {
-    id: number;
+    id: string;
     type: "material" | "techniks" | "uslugi";
     name: string;
     img: string;
@@ -38,49 +38,49 @@ export const tabsData: ITabData[] = [
     tabSlug: "/nerudnie_materiali",
     tabItems: [
       {
-        id: 4,
+        id: "sheben_izvestnyakoviy",
         type: "material",
         name: "Щебень известняковый",
         img: crushedLimestone,
         slug: "/nerudnie_materiali/sheben_izvestnyakoviy",
       },
       {
-        id: 1,
+        id: "sheben_granitniy",
         type: "material",
         name: "Щебень гранитный",
         img: crushedGranitestone,
         slug: "/nerudnie_materiali/sheben_granitniy",
       },
       {
-        id: 2,
+        id: "sheben_shlakoviy",
         type: "material",
         name: "Щебень шлаковый",
         img: crushedSlagstone,
         slug: "/nerudnie_materiali/sheben_shlakoviy",
       },
       {
-        id: 3,
+        id: "sheben_dolomitoviy",
         type: "material",
         name: "Щебень доломитовый",
         img: dolomiteCrushedStone,
         slug: "/nerudnie_materiali/sheben_dolomitoviy",
       },
       {
-        id: 0,
+        id: "pesok",
         type: "material",
         name: "Песок",
         img: sand,
         slug: "/nerudnie_materiali/pesok",
       },
       {
-        id: 5,
+        id: "pgs",
         type: "material",
         name: "Песчано-гравийная смесь",
         img: sandAndGravel,
         slug: "/nerudnie_materiali/pgs",
       },
       {
-        id: 6,
+        id: "shps",
         type: "material",
         name: "Щебеночно-песчаная смесь",
         img: crushedStoneSAndMixture,
@@ -93,56 +93,56 @@ export const tabsData: ITabData[] = [
     tabSlug: "/technika",
     tabItems: [
       {
-        id: 11,
+        id: "arenda_avtokran",
         type: "techniks",
         name: "Автокран",
         img: truckСrane,
         slug: "/technika/arenda_avtokran",
       },
       {
-        id: 12,
+        id: "arenda_avtovishka",
         type: "techniks",
         name: "Автовышка",
         img: aerialPlatform,
         slug: "/technika/arenda_avtovishka",
       },
       {
-        id: 15,
+        id: "arenda_manipulator",
         type: "techniks",
         name: "Манипулятор",
         img: manipulator,
-        slug: "/technika/arenda_avtovishka",
+        slug: "/technika/arenda_manipulator",
       },
       {
-        id: 17,
+        id: "arenda_ekskavator",
         type: "techniks",
         name: "Эскаватор",
         img: excavator,
         slug: "/technika/arenda_ekskavator",
       },
       {
-        id: 13,
+        id: "arenda_buldozer",
         type: "techniks",
         name: "Бульдозер",
         img: bulldozer,
         slug: "/technika/arenda_buldozer",
       },
       {
-        id: 16,
+        id: "arenda_pogruzchik",
         type: "techniks",
         name: "Фронтальный погрузчик",
         img: frontloader,
         slug: "/technika/arenda_pogruzchik",
       },
       {
-        id: 18,
+        id: "arenda_trala",
         type: "techniks",
         name: "Трал",
         img: trawl,
         slug: "/technika/arenda_trala",
       },
       {
-        id: 14,
+        id: "arenda_samosval",
         type: "techniks",
         name: "Самосвал",
         img: dumptruck,
@@ -155,28 +155,28 @@ export const tabsData: ITabData[] = [
     tabSlug: "/uslugi",
     tabItems: [
       {
-        id: 21,
+        id: "vyivoz_musora",
         type: "uslugi",
         name: "Вывоз мусора",
         img: garbageRemoval,
         slug: "/uslugi/vyivoz_musora",
       },
       {
-        id: 22,
+        id: "vyivoz_grunta",
         type: "uslugi",
         name: "Вывоз грунта",
         img: soilRemoval,
         slug: "/uslugi/vyivoz_grunta",
       },
       {
-        id: 23,
+        id: "sipuchie_materiali",
         type: "uslugi",
         name: "Перевозка сыпучих материалов",
         img: ransportationOfBulkMaterials,
         slug: "/uslugi/sipuchie_materiali",
       },
       {
-        id: 24,
+        id: "uborka_snega",
         type: "uslugi",
         name: "Уборка снега",
         img: snowRemoval,

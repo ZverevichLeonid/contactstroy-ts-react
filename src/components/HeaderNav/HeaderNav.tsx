@@ -51,7 +51,6 @@ export const HeaderNav: React.FC = () => {
                     <Link
                       onClick={handleTabClose}
                       to={tab.slug}
-                      state={{ id: tab.id, type: tab.type }}
                       key={tab.name}
                       className="tab-menu__grid-item"
                     >
