@@ -5,11 +5,12 @@
 .hero__box {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 10px;
 }
 .hero__text {
   padding-top: 150px;
   padding-bottom: 150px;
+  min-width: 450px;
 }
 
 .hero__title {

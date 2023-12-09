@@ -2,7 +2,7 @@ import React from "react";
 import heroIMG from "../../assets/images/hero/slider_1.jpg";
 import { Link } from "react-router-dom";
 import "./hero.scss";
-
+import "./responsive.scss";
 export const Hero: React.FC = () => {
   return (
     <section className="hero">

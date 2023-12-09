@@ -1,12 +1,12 @@
-.form__box {
+.form-section__box {
   position: relative;
   margin-bottom: 150px;
-  height: 600px;
+  min-height: 600px;
   width: 100%;
 }
-.form__left {
+.form {
   width: 55%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   top: 10%;
   left: 0;
@@ -14,18 +14,20 @@
   z-index: 2;
   border-radius: 5px;
 }
-.form__right {
+.form__left {
+}
+.form-section__text {
   display: flex;
   justify-content: flex-end;
   background-color: #ffc100;
   position: absolute;
-  height: 100%;
+  min-height: 100%;
   width: 55%;
   right: 0;
   top: 0;
   border-radius: 5px;
 }
-.form__left-text {
+.form__text {
   padding: 50px;
   max-width: 485px;
   h5 {
@@ -59,10 +61,11 @@
     margin-bottom: 15px;
   }
 }
-.form__left-svg {
+.form__svg {
   position: absolute;
   bottom: 5%;
   right: 0;
+  z-index: -1;
 }
 
 .input {
@@ -75,7 +78,7 @@
   font-weight: 500;
 }
 
-.form__right-text {
+.form-section__desc {
   max-width: 85%;
   padding: 50px;
   h5 {
@@ -97,7 +100,7 @@
     width: 60%;
   }
 }
-.form__right-svg-two {
+.form-section__svg--two {
   position: absolute;
   opacity: 0.2;
   bottom: 3%;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./contacts.scss";
 import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
-
+import "./responsive.scss";
 export const Contacts: React.FC = () => {
   return (
     <section id="contacts" className="contacts">

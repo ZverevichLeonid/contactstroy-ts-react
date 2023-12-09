@@ -1,10 +1,13 @@
 .header__row {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-
   margin-bottom: 15px;
+}
+.header__img {
+  max-width: 300px;
 }
 .header__block {
   display: flex;
@@ -32,4 +35,17 @@
   :first-child {
     width: 100%;
   }
+}
+.mobile__btn {
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+}
+.header__nav-burger {
+  display: none;
 }

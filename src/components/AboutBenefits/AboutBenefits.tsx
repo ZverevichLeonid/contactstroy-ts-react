@@ -7,7 +7,7 @@ import benefit_3 from "../../assets/images/about/benefit_3.png";
 import benefit_4 from "../../assets/images/about/benefit_4.png";
 import benefit_5 from "../../assets/images/about/benefit_5.png";
 import "./aboutbenefits.scss";
-
+import "./responsive.scss";
 export const AboutBenefits: React.FC = () => {
   const container = {
     hidden: { opacity: 0 },

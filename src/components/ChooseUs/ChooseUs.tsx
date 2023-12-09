@@ -9,7 +9,7 @@ import ticker6 from "../../assets/images/choose-us/polyplast.jpg";
 import ticker7 from "../../assets/images/choose-us/schekinoazot.jpeg";
 import ticker8 from "../../assets/images/choose-us/tulachermet.png";
 import { TickerItem } from "../TickerItem/TickerItem";
-
+import "./responsive.scss";
 export const ChooseUs: React.FC = () => {
   return (
     <section className="choose-us">

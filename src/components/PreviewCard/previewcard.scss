@@ -1,5 +1,5 @@
 .main-directions__card {
-  width: 33%;
+  width: 31%;
   a {
     height: 100%;
     display: flex;
@@ -19,5 +19,15 @@
     max-width: 80%;
     max-height: 200px;
     cursor: pointer;
+  }
+}
+@media (max-width: 882px) {
+  .main-directions__card {
+    width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .main-directions__card {
+    width: 85%;
   }
 }

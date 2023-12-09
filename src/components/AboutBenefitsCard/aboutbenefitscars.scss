@@ -29,3 +29,18 @@
     text-wrap: nowrap;
   }
 }
+
+@media (max-width: 550px) {
+  .about-benefits__card {
+    img {
+      width: 86px;
+      height: 86px;
+    }
+    p {
+      font-size: 14px;
+    }
+    span {
+      font-size: 42px;
+    }
+  }
+}

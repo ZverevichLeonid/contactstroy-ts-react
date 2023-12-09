@@ -21,7 +21,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 50%;
     right: 0;
     width: 100%;
     height: 1px;
@@ -44,6 +44,7 @@
   padding: 15px;
   gap: 10px;
   border: 2px solid black;
+  text-align: center;
 }
 .contacts__grid-title {
   font-size: 20px;

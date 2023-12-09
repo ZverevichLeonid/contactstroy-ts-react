@@ -31,3 +31,8 @@
 .button-textColor-white {
   color: white;
 }
+@media (max-width: 1010px) {
+  .button {
+    font-size: 14px;
+  }
+}

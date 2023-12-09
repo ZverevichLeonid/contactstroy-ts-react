@@ -4,9 +4,8 @@ import { materialsData } from "../../data/materialsData";
 import { specialEquipmentData } from "../../data/specialEquimpentData";
 import { PreviewCard } from "../PreviewCard/PreviewCard";
 import { AnimatePresence, motion } from "framer-motion";
-
 import "./maindirections.scss";
-
+import "./responsive.scss";
 export const MainDirections: React.FC = () => {
   const [list, setList] = useState<
     typeof materialsData | typeof specialEquipmentData | []

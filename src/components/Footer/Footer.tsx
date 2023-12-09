@@ -6,6 +6,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./footer.scss";
+import "./responsive.scss";
 export const Footer: React.FC = () => {
   return (
     <footer className="footer">

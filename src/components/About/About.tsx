@@ -1,7 +1,8 @@
 import React from "react";
-import "./about.scss";
 import aboutImg from "../../assets/images/about/about.png";
 import { AboutBenefits } from "../AboutBenefits/AboutBenefits";
+import "./about.scss";
+import "./responsive.scss";
 export const About: React.FC = () => {
   return (
     <section className="about">
