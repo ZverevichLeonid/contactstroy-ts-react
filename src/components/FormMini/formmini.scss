@@ -36,3 +36,9 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .form-mini {
+    padding: 20px;
+  }
+}

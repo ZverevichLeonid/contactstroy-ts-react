@@ -9,4 +9,13 @@
     grid-column-start: 1;
     grid-column-end: 2;
   }
+  .contacts__grid-title {
+    font-size: 18px;
+  }
+  .contacts__grid-info {
+    font-size: 14px;
+    span {
+      font-size: 14px;
+    }
+  }
 }

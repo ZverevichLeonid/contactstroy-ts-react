@@ -6,7 +6,7 @@ export const Contacts: React.FC = () => {
   return (
     <section id="contacts" className="contacts">
       <div className="container">
-        <div className="contacts__title">
+        <div className="contacts__title title">
           <h4>Контакты</h4>
         </div>
         <div className="contacts__grid">

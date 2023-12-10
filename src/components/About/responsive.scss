@@ -5,11 +5,22 @@
 }
 
 @media (max-width: 969px) {
+  .about {
+    padding: 10px 0;
+  }
+  .about__title {
+    font-size: 28px;
+  }
   .about__box {
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .about__text {
+    span {
+      font-size: 26px;
+    }
   }
 }
 @media (max-width: 550px) {
@@ -18,13 +29,24 @@
     min-width: 300px;
   }
   .about__title {
-    font-size: 28px;
+    font-size: 22px;
+    padding: 0;
+    &::before {
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      display: none;
+    }
   }
   .about__text {
     span {
       display: block;
-      font-size: 26px;
+      font-size: 18px;
       margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
     }
   }
 }

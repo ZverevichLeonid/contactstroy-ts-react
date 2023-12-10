@@ -106,16 +106,6 @@ export const Form: React.FC = () => {
                 техника, то мы готовы предоставить ее по партнерской программе с
                 приятными условиями для вас.
               </p>
-              <a href="#contacts">
-                <Button
-                  textColor="white"
-                  backgroundColor="yellow"
-                  borderColor="white"
-                >
-                  Связаться
-                </Button>
-              </a>
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="231"
@@ -137,6 +127,9 @@ export const Form: React.FC = () => {
                   fill="white"
                 />
               </svg>
+              <a className="form-section__link" href="#contacts">
+                Связаться
+              </a>
             </div>
           </div>
         </div>

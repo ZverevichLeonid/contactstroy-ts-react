@@ -24,7 +24,7 @@ export const AboutBenefits: React.FC = () => {
       variants={container}
       initial={"hidden"}
       whileInView={"show"}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: "some" }}
       className="about-benefits"
     >
       <AboutBenefitsCard

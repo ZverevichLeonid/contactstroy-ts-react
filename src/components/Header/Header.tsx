@@ -103,19 +103,29 @@ export const Header: React.FC = () => {
       <nav className={nav ? "header__nav-burger active" : "header__nav-burger"}>
         <ul className="header__list-burger">
           <li className="header__nav-burger__item">
-            <Link to={"/nerudnie_materiali"}>Нерудные материалы</Link>
+            <Link onClick={() => setNav(false)} to={"/nerudnie_materiali"}>
+              Нерудные материалы
+            </Link>
           </li>
           <li className="header__nav-burger__item">
-            <Link to={"/technika"}>Строительная техника</Link>
+            <Link onClick={() => setNav(false)} to={"/technika"}>
+              Строительная техника
+            </Link>
           </li>
           <li className="header__nav-burger__item">
-            <Link to={"/uslugi"}>Услуги</Link>
+            <Link onClick={() => setNav(false)} to={"/uslugi"}>
+              Услуги
+            </Link>
           </li>
           <li className="header__nav-burger__item">
-            <Link to={"/about"}>О Компании</Link>
+            <Link onClick={() => setNav(false)} to={"/about"}>
+              О Компании
+            </Link>
           </li>
           <li className="header__nav-burger__item">
-            <Link to={"/contacts"}>Контакты</Link>
+            <Link onClick={() => setNav(false)} to={"/contacts"}>
+              Контакты
+            </Link>
           </li>
         </ul>
       </nav>

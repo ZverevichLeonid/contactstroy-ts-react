@@ -1,0 +1,29 @@
+@media (max-width: 1023px) {
+  .item-description__flex {
+    flex-direction: column;
+  }
+  .item-description__box {
+    padding: 0;
+    padding-top: 20px;
+    max-width: none;
+    min-height: 0;
+  }
+  .item-description__form {
+    padding-top: 0;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .item-description__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .item-description__title {
+    font-size: 22px;
+  }
+  .item-description {
+    margin-bottom: 50px;
+  }
+}

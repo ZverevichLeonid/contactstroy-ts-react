@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../../../Button/Button";
 import { IAllData } from "../../../../data/allData";
 import "./iteminfo.scss";
-
+import "./responsive.scss";
 interface ItemInfoProps {
   item: IAllData;
   typeIndex: number;
@@ -19,7 +19,7 @@ export const ItemInfo: React.FC<ItemInfoProps> = ({
       <section className="item">
         <div className="container">
           <div className="item__box">
-            <div className="item__title">
+            <div className="item__title title">
               <h1>{item.title}</h1>
             </div>
             <div className="item__img">
@@ -60,7 +60,7 @@ export const ItemInfo: React.FC<ItemInfoProps> = ({
       <section key={item.id} className="item">
         <div className="container">
           <div className="item__box">
-            <div className="item__title">
+            <div className="item__title title">
               <h1>{item.title}</h1>
             </div>
             {item.types && item.types.length > 1 ? (
@@ -139,7 +139,7 @@ export const ItemInfo: React.FC<ItemInfoProps> = ({
       <section className="item">
         <div className="container">
           <div className="item__box">
-            <div className="item__title">
+            <div className="item__title title">
               <h1>{item.title}</h1>
             </div>
             <div className="item__img">

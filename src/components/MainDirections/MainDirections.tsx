@@ -15,7 +15,7 @@ export const MainDirections: React.FC = () => {
   return (
     <section className="main-directions">
       <div className="container">
-        <div className="main-directions__title">
+        <div className="main-directions__title title">
           <h2>Основные направления</h2>
         </div>
         <div className="main-directions__filter">

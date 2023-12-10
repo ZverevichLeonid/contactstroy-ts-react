@@ -38,7 +38,7 @@ export const AllItemsList: React.FC = () => {
   return (
     <section className="items">
       <div className="container">
-        <div className="items__title">
+        <div className="items__title title">
           <SetTitle />
         </div>
         {location.pathname === "/nerudnie_materiali" ? (

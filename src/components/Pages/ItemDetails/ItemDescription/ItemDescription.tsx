@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./itemdescription.scss";
 import { FormMini } from "../../../FormMini/FormMini";
 import { Modal } from "../../../Modal/Modal";
+import "./responsive.scss";
 import { GiConfirmed } from "react-icons/gi";
 interface ItemDescriptionProps {
   type: "techniks" | "material" | "uslugi";

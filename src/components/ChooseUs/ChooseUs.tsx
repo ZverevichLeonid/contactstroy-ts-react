@@ -14,7 +14,7 @@ export const ChooseUs: React.FC = () => {
   return (
     <section className="choose-us">
       <div className="container">
-        <div className="choose-us__title">
+        <div className="choose-us__title title">
           <h3>Нас выбирают</h3>
         </div>
       </div>
