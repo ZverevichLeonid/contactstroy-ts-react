@@ -15,7 +15,7 @@ export const AboutBenefitsCard: React.FC<AboutBenefitsCardProps> = ({
   value,
   desc,
 }) => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width] = useState(window.innerWidth);
   const cardVariantsDesctop: Variants = {
     hidden: {
       y: -150,

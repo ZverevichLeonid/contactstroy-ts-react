@@ -5,7 +5,7 @@ import { ItemDetails } from "./components/Pages/ItemDetails/ItemDetails";
 import { AllItems } from "./components/Pages/AllItems/AllItems";
 import { AboutPage } from "./components/Pages/AboutPage/AboutPage";
 import { ContactsPage } from "./components/Pages/ContactsPage/ContactsPage";
-function App() {
+const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -19,6 +19,6 @@ function App() {
       <Route path="/contacts" element={<ContactsPage />} />
     </Routes>
   );
-}
+};
 
 export default App;
