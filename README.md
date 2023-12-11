@@ -1,6 +1,6 @@
-# Construction company e-commerce website
+# Construction company website
 
-# Built with
+# Main directions
 
 - Vite
 - TypeScript
