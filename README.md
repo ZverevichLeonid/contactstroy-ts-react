@@ -5,7 +5,7 @@
 👉Посмотреть проект <a href='https://contactstroy-ts-react.vercel.app/'>Контакт-Строй</a>
 Главная 
 </br>
-![image](https://github.com/ZverevichLeonid/contactstroy-ts-react/assets/97947306/f2a9fb93-c035-4516-b058-afe78e71c624)
+![image](https://github.com/ZverevichLeonid/contactstroy-ts-react/assets/97947306/f2a9fb93-c035-4516-b058-afe78e71c624)  </br>
  </br>
  </br>
  Страница аренды </br>
